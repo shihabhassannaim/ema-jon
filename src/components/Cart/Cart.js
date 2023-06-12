@@ -1,4 +1,5 @@
 import React from 'react';
+import './Cart.css'
 
 const Cart = (props) => {
     const cart = props.cart;
@@ -12,7 +13,8 @@ const Cart = (props) => {
         <div>
             <h4>Order Summery</h4>
             <p>Items Ordered : {cart.length}</p>
-            <p>Total price : {total}</p>
+            <p>Total price : ${total}</p>
+            <button>Place Order</button>
         </div>
     );
 };
